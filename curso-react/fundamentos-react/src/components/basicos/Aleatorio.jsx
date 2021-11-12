@@ -8,10 +8,10 @@ export default (props)  => {
     return (
         <div>
         <h2>Aleatorio</h2>
-        <p>Atualize para gerar um número aleatório novo</p>
-        <p>O número aleatório Mínimo: <strong> { min }</strong></p>
-        <p>O número aleatório Máximo: <strong> { max }</strong></p>
-        <p>O número Escolhido: <strong> { aleatorio }</strong></p>
+        {/* <p>Atualize para gerar um número aleatório novo</p> */}
+        <p><strong> Valor Mínimo: </strong>{ min }</p>
+        <p> <strong> Valor Máximo: </strong>{ max }</p>
+        <p> <strong> O número Escolhido: </strong>{ aleatorio }</p>
 
     </div>
     );
