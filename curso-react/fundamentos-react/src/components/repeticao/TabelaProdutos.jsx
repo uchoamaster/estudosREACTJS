@@ -3,12 +3,12 @@ import produtos from '../../data/produtos'
 import "./TabelaProduto.css";
 
 
-export default props => {
+export default (props) => {
 
     function getLinhas() {
-        return produtos.map(produto => {
+        return produtos.map((produto, i) => {
             return (
-                <tr>
+                <tr key={produto.id} className={i % 2 == 0 ? 'Par' : 'Impar'}>
                     <td>{produto.id}</td>
                     <td>{produto.nome}</td>
                     <td>R$ {produto.preco.toFixed(2).replace('.',',')}</td>
@@ -19,7 +19,7 @@ export default props => {
 
 
     return (
-        <div>
+        <div className="TabelaProdutos">
             <table >
                 <thead>
                     <tr>
