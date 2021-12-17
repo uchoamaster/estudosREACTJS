@@ -7,8 +7,8 @@ export default props => {
             <If test={usuario && usuario.nome}>
             Seja bem vindo <strong>{ props.usuario.nome }</strong>!
             </If>
-            <If test={!usuario && !usuario.nome}>
-            Seja bem vindo <strong>Amig„o</strong>!
+            <If test={!usuario || !usuario.nome}>
+            Seja bem vindo <strong>Amig√£o</strong>!
             </If>
         </div>
     )
