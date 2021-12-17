@@ -1,4 +1,5 @@
 import React, { useState } from  'react';
+import './App.css';
 
 const App = () => {
 
@@ -9,10 +10,10 @@ const App = () => {
   }
 
   return (
-    <div>
+    <div className='container'>
       Nome:
-      <input type="text" value={name} onChange={handleInput}/>
-      <hr />
+      <input type="text" className='input' value={name} onChange={handleInput}/>
+      <hr className='linha' />
       Seu nome é : {name}
     </div>
 
